@@ -167,7 +167,6 @@ li.list-icon{
     position: absolute;
     top: 50%;
     left: 50%;
-    right: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
     color: #fff;
