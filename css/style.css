@@ -122,3 +122,35 @@ li.list-icon{
 }
 
 /*banner section end*/
+/*funny videos section start*/
+.funny-videos-section{
+    margin: 50px 0px;
+}
+.funny-videos-content-section{
+    text-align: center;
+}
+.funny-videos-content-section h1{
+    padding-bottom: 30px;
+    font-size: 2.8rem;
+}
+.funny-videos-content-section p{
+    padding-bottom: 40px;
+}
+.funny-videos-content-section span{
+    background: -webkit-linear-gradient(#F948B2, #8758F1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.game-poster{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.game-poster img{
+    width: 100%;
+}
+.game-poster p{
+    margin-top: 10px;
+}
+/*funny videos section end*/
