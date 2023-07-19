@@ -58,6 +58,7 @@ header .logo{
 }
 .nav ul li a{
     text-decoration: none;
+    color: #000;
 }
 li.list-icon{
     border-radius: 3px;
