@@ -1,11 +1,13 @@
+/*==== for mobile device ====*/
 @media screen and (max-width: 430px) {
     /*common css*/
     .box-width{
         max-width: 100%;
         margin: 0px 20px;
     }
-     /*common css end*/
-    /*header section start*/
+     /*==== common css end ====*/
+
+    /* ==== header section start ====*/
     .header-container{
         flex-direction: column;
     }
@@ -18,11 +20,11 @@
     header .logo{
         width: auto;
     }
-     /*header section end*/
-     /*banner section start */
+     /*==== header section end ====*/
+
+     /*==== banner section start ====*/
      .banner-section{
         background-image: none;
-
     }
     .banner-container {
         grid-template-columns: 1fr;
@@ -39,86 +41,77 @@
     }
     .banner-content h3{
         font-size: 1.8rem;
-
     }
-     /*banner section end */
-     /*funny videos*/
+     /*==== banner section end ====*/
+
+     /*==== game button ====*/
+     .game-button {
+        gap:6px;
+    }
+    .game-button a{
+        font-size: 10px;
+    }
+     /*==== game button end ====*/
+
+     /*==== funny videos ====*/
      .funny-videos-content-section h1{
         font-size: 1.8rem;
      }
-     /*funny videos end*/
-    /*play online game start*/
-    .online-game-section{
-        margin-top: 0px;
-    }
-    .online-game-container{
-        flex-direction: column;
-    }
-    .online-game-content {
-        text-align: center;
-    }
-    .online-game-image {
-    grid-template-columns: 70%;
-    margin-top: 25px;
-    justify-content: end;
-    }
-    .online-game-image .position-box{
-        position: relative;
-        bottom: 70px;
-        right: 40px;
-    }
-.online-game-content h3 {
-    line-height: 1.3em;
-    margin-bottom: 15px;
-}
-    /*play online game end */
-/*footer*/
-.footer-nav-bar ul{
-    grid-template-columns: repeat(3, 1fr);
-}
+     /*==== funny videos end ====*/
 
-.footer-nav-bar {
-    width: 100%;
-}
-.footer-nav-bar ul li {
-    padding-bottom: 10px;
-}
-.footer-icons{
-    width: 75%; 
-}
-.footer-nav-bar2{
-    width: 90%;
-}
-.footer-nav-bar2 ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-content: center;
-    margin: 20px 0px;
-}
-.footer-nav-bar2 ul {
-    grid-template-columns: repeat(2, 1fr);
-}
-.footer-nav-bar2 ul li{
-    padding-bottom: 10px;
-}
-
-/*footer end*/
-/*game button start*/
-     .first-game-buttons {
+    /*==== game button start ====*/
+    .first-game-buttons {
         grid-template-columns: repeat(3, 1fr);
     }
     .game-poster {
         grid-template-columns: repeat(1, 1fr);
     }
-    /*game button start*/
-.desktop{
-    display: none;
+    .desktop{
+        display: none;
+    }
+    /*==== game button end ====*/
+
+    /*==== footer start ==== */
+    .footer-nav-bar ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-nav-bar {
+        width: 100%;
+    }
+    .footer-nav-bar ul li {
+        padding-bottom: 10px;
+    }
+    .footer-icons{
+        width: 75%; 
+    }
+    .footer-nav-bar2{
+        width: 90%;
+    }
+    .footer-nav-bar2 ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: center;
+        margin: 20px 0px;
+    }
+    .footer-nav-bar2 ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-nav-bar2 ul li{
+        padding-bottom: 10px;
+    }
+    .footer-icons ul{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .footer-icons ul li{
+        padding-bottom: 20px;
+    }
+/*==== footer end ====*/
 }
-}
-/*tablet*/
+/*==== tablet ====*/
 @media screen and (min-width: 431px) and (max-width:900px) {
-    /*header section*/
+    /*==== header section start====*/
     .header-container{
         flex-direction: column;
     }
@@ -131,11 +124,11 @@
     header .logo{
         width: auto;
     }
-    /*header section end*/
-    /*banner section*/
+    /*==== header section end ====*/
+
+    /*==== banner section start ====*/
     .banner-section{
         background-image: none;
-
     }
     .banner-container {
         grid-template-columns: 1fr;
@@ -149,39 +142,36 @@
         max-width: 70%;
         margin: 0 auto;
     }
-    /*banner section end*/
-    /*game button*/
+    /*==== banner section end ====*/
+
+    /*==== game button ====*/
     .first-game-buttons {
         grid-template-columns: repeat(3, 1fr);
     }
     .desktop{
         display: none;
     }
-    /*game button end*/
-    /*funny video start*/
+    /*==== game button end ====*/
+
+    /*==== funny video start ====*/
+
     .game-poster {
         grid-template-columns: repeat(2, 1fr);
+    }
+    /*==== funny video end ====*/
 
+    /*==== play online game start ====*/
+    .online-game-image {
+        grid-template-columns: 70%;
+        margin-top: 50px;
+        justify-content: end;
     }
-    /*funny video end*/
-    /*play online game start*/
-    .online-game-container{
-        flex-direction: column;
+    .online-game-content h3 {
+        line-height: 1.3em;
+        margin-bottom: 30px;
     }
-    .online-game-content {
-        text-align: center;
-    }
-.online-game-image {
-    grid-template-columns: 70%;
-    margin-top: 50px;
-    justify-content: end;
-}
-.online-game-content h3 {
-    line-height: 1.3em;
-    margin-bottom: 30px;
-}
-    /*play online game end */
-    /*footer*/
+    /*==== play online game end ====*/
+    /*==== footer start ====*/
     .footer-nav-bar {
         width: 100%;
     }
@@ -204,16 +194,17 @@
     .footer-icons {
         width: 50%;
     }
+    /*==== footer end ====*/
 }
 
+/*==== extra media query for better responsive ====*/
 @media screen and (min-width: 900px){
     .mobile-tablet{
         display: none;
     }
-    
 }
+    /*==== play online game start ====*/
 @media screen and (max-width: 1207px){
-    /*play online game start*/
     .online-game-section{
         margin-top: 0px;
     }
@@ -233,10 +224,9 @@
         bottom: 70px;
         right: 40px;
     }
-.online-game-content h3 {
-    line-height: 1.3em;
-    margin-bottom: 15px;
-}
-    /*play online game end */
-    
+    .online-game-content h3 {
+        line-height: 1.3em;
+        margin-bottom: 15px;
+    }
+    /*==== play online game end ====*/
 }

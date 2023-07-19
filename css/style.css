@@ -1,6 +1,6 @@
-/*work sans google font*/
+/*==== work sans google font ====*/
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
-/*common style*/
+/*==== common style ====*/
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +12,8 @@ body{
     max-width: 85%;
     margin: 0 auto;
 }
-/*header section start*/
+/*==== common style end ====*/
+/*==== header section start ====*/
 .header-section{
     padding: 20px 0px;
     box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
@@ -68,13 +69,13 @@ li.list-icon{
     font-size:20px;;
 }
 .list-icon .fa-youtube{
-    color: #ff42a5;
+    color: red;
 }
 .list-icon .fa-facebook{
     color: #4EC5F7;
 }
-/* ===== header section end =====*/
-/*banner section start*/
+/*==== header section end ====*/
+/*==== banner section start ====*/
 .banner-section{
     background-image: url('../assets/images/Group14.png');
     background-position: left;
@@ -111,7 +112,6 @@ li.list-icon{
     text-decoration: none;
     color: #534C64;
 }
-
 .btn .primary-btn{
     background-color: #ff42a5;
     padding: 10px 30px;
@@ -134,9 +134,9 @@ li.list-icon{
 .banner-image img{
     width: 100%;
 }
+/*==== banner section end ====*/
 
-/*banner section end*/
-/*funny videos section start*/
+/*==== funny videos section start ====*/
 .funny-videos-section{
     margin: 50px 0px;
 }
@@ -155,14 +155,7 @@ li.list-icon{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.game-poster{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-/*box hover*/
-
+/*==== box hover ==== */
 .game-poster .box {
     position: relative;
 }
@@ -177,6 +170,7 @@ li.list-icon{
 }
 .game-poster .box:hover .video-icon {
     display: block;
+    cursor: pointer;
 }
 .game-poster .box > img::before {
     content: "";
@@ -187,22 +181,22 @@ li.list-icon{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.1s ease;
 }
 .game-poster .box:hover::before {
     opacity: 1;
 }
 .game-poster .box:hover > img {
-    border: 2px solid #ff42a5;
-    border-radius: 15px;
+    border: 3px solid red;
+    border-radius: 20px;
     -webkit-filter: brightness(40%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
+    cursor: pointer;
 }
-
 .game-poster span{
     font-size: 1rem;
     font-weight: 700;
@@ -215,8 +209,14 @@ li.list-icon{
 .game-poster p{
     margin-top: 10px;
 }
-/*funny videos section end*/
-/*play online game start*/
+.game-poster{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+/*==== funny videos section end ==== */
+
+/*====  play online game start ==== */
 .online-game-section{
 margin-top: 100px;
 }
@@ -224,7 +224,6 @@ margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .online-game-content{
     text-align: right;
@@ -232,8 +231,7 @@ margin-top: 100px;
 .online-game-content h3{
     color: #0B0223;
     font-size: 2rem;
-    font-weight: 700;
-    
+    font-weight: 700; 
 }
 .online-game-content span{
     color: #ea4aba;
@@ -254,8 +252,9 @@ margin-top: 100px;
     bottom: 100px;
     right: 80px;
 }
-/*play online game end*/
-/*game button start*/
+/*====  play online game end ====*/
+
+/*==== game button start ==== */
 .game-button-section{
     background-color: #fff9fc;
     padding: 50px 0px;
@@ -279,10 +278,19 @@ margin-top: 100px;
     margin-bottom: 10px;
     padding: 10px 0px;
 }
+.game-button:hover{
+    border: 1px solid #ea4aba;
+    color: #ea4aba;
+}
+.game-button:hover a{
+    color: #ea4aba;
+    cursor: pointer;
+}
 .game-button a{
     text-decoration: none;
     color: #0B0223;
     font-size: 12px;
+    font-weight: 600;
 }
 .game-button img{
     width: 25px;
@@ -290,14 +298,18 @@ margin-top: 100px;
 .first-game-buttons{
     padding-bottom: 10px;
 }
-/*game button end*/
-/*footer start*/
+/*==== game button end ====*/
+
+/*==== footer start ====*/
 .footer-section{
     background-color: #0B0223;
     padding: 50px 0px;
     color: #fff;
 }
-
+.footer-section a{
+    color: #fff;
+    text-decoration: none;
+}
 footer .logo{
     width: 30%;
     display: flex;
@@ -309,7 +321,7 @@ footer .logo{
     color: #fff;
 }
 .footer-nav-bar{
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
 .footer-nav-bar ul{
@@ -323,11 +335,13 @@ footer .logo{
     list-style: none;
     text-align: center;
 }
+.footer-nav-bar ul li a{
+    font-size: 14px;
+}
 .footer-icons{
     width: 30%;
     margin: 0 auto;
 }
-
 .footer-icons ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -362,4 +376,4 @@ footer .logo{
     text-align: center;
     font-size: 12px;
 }
-/*footer end*/
+/*==== footer end ====*/
