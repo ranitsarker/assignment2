@@ -15,14 +15,14 @@ body{
 /*header section start*/
 .header-section{
     padding: 20px 0px;
-    border-bottom: 1px solid #ededed;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
 }
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo{
+header .logo{
     width: 30%;
     display: flex;
     justify-content: start;
@@ -64,15 +64,29 @@ li.list-icon{
     padding: 10px 20px;
     cursor:pointer;
 }
+.list-icon .fa{
+    font-size:20px;;
+}
+.list-icon .fa-youtube{
+    color: #ff42a5;
+}
+.list-icon .fa-facebook{
+    color: #4EC5F7;
+}
 /* ===== header section end =====*/
 /*banner section start*/
 .banner-section{
-    height: 100hv;
+    background-image: url('../assets/images/Group14.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .banner-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-content{
+    align-self: center;
 }
 .banner-content h3{
     color: #0B0223;
@@ -147,6 +161,54 @@ li.list-icon{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+/*box hover*/
+
+.game-poster .box {
+    position: relative;
+}
+.game-poster .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    display: none;
+}
+.game-poster .box:hover .video-icon {
+    display: block;
+}
+.game-poster .box > img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.game-poster .box:hover::before {
+    opacity: 1;
+}
+.game-poster .box:hover > img {
+    border: 2px solid #ff42a5;
+    border-radius: 15px;
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.game-poster span{
+    font-size: 1rem;
+    font-weight: 700;
+    color:#ff42a5;
+}
+/*box hover end*/
 .game-poster img{
     width: 100%;
 }
@@ -155,12 +217,10 @@ li.list-icon{
 }
 /*funny videos section end*/
 /*play online game start*/
+.online-game-section{
+margin-top: 100px;
+}
 .online-game-container{
-    /*
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -178,13 +238,21 @@ li.list-icon{
 .online-game-content span{
     color: #ea4aba;
 }
+.main-image img{
+    width: 70%;
+}
+.position-box img{
+    width: 30%;
+}
+.online-game-image{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
 .online-game-image .position-box{
     position: relative;
-    bottom: 260px;
-    right: 24%;
-}
-.online-game-image img{
-    width: auto;
+    bottom: 100px;
+    right: 80px;
 }
 /*play online game end*/
 /*game button start*/
@@ -200,7 +268,7 @@ li.list-icon{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-.game-button{
+.game-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,11 +276,16 @@ li.list-icon{
     background-color: #fff;
     border-radius: 25px;
     margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0px;
 }
 .game-button a{
     text-decoration: none;
     color: #0B0223;
     font-size: 12px;
+}
+.game-button img{
+    width: 25px;
 }
 .first-game-buttons{
     padding-bottom: 10px;
@@ -224,12 +297,21 @@ li.list-icon{
     padding: 50px 0px;
     color: #fff;
 }
-.footer-logo{
+
+footer .logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
 }
 .footer-logo p{
     color: #fff;
 }
+.footer-nav-bar{
+    width: 60%;
+    margin: 0 auto;
+  }
 .footer-nav-bar ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -241,6 +323,11 @@ li.list-icon{
     list-style: none;
     text-align: center;
 }
+.footer-icons{
+    width: 30%;
+    margin: 0 auto;
+}
+
 .footer-icons ul{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -252,6 +339,13 @@ li.list-icon{
     list-style: none;
     text-align: center;
 }
+.footer-icons .fa{
+    font-size: 25px;
+}
+.footer-nav-bar2 {
+    width: 50%;
+    margin: 0 auto;
+}
 .footer-nav-bar2 ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -262,8 +356,10 @@ li.list-icon{
 .footer-nav-bar2 ul li{
     list-style: none;
     text-align: center;
+    font-size: 12px;
 }
 .copyright p{
     text-align: center;
+    font-size: 12px;
 }
 /*footer end*/
