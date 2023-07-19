@@ -44,6 +44,20 @@
     }
      /*==== banner section end ====*/
 
+     /*==== play online game start ====*/
+     .main-image img {
+        width: 90%;
+    }
+    .online-game-image .position-box {
+        position: relative;
+        bottom: 56px;
+        right: 34px;
+    }
+    .position-box img {
+        width: 50%;
+    }
+    /*==== play online game end ====*/
+
      /*==== game button ====*/
      .game-button {
         gap:6px;
@@ -205,6 +219,14 @@
 }
     /*==== play online game start ====*/
 @media screen and (max-width: 1207px){
+    .main-image img{
+        width: 80%;
+    }
+    .online-game-image .position-box {
+        position: relative;
+        bottom: 100px;
+        right: 80px;
+    }
     .online-game-section{
         margin-top: 0px;
     }
@@ -227,6 +249,9 @@
     .online-game-content h3 {
         line-height: 1.3em;
         margin-bottom: 15px;
+    }
+    .position-box img{
+        width: 40%;
     }
     /*==== play online game end ====*/
 }

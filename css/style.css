@@ -122,6 +122,10 @@ li.list-icon{
     font-family: 'Work Sans', sans-serif;
     margin-right: 10px;
 }
+.btn .primary-btn a, .btn .secondary-btn a{
+    color: #fff;
+    text-decoration: none;
+}
 .btn .secondary-btn{
     background-color: #4EC5F7;
     padding: 10px 30px;
@@ -201,6 +205,7 @@ li.list-icon{
     font-size: 1rem;
     font-weight: 700;
     color:#ff42a5;
+    font-family: 'Work Sans', sans-serif;
 }
 /*box hover end*/
 .game-poster img{
