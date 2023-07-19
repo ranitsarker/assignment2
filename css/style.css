@@ -218,3 +218,52 @@ li.list-icon{
     padding-bottom: 10px;
 }
 /*game button end*/
+/*footer start*/
+.footer-section{
+    background-color: #0B0223;
+    padding: 50px 0px;
+    color: #fff;
+}
+.footer-logo{
+    margin: 0 auto;
+}
+.footer-logo p{
+    color: #fff;
+}
+.footer-nav-bar ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px;
+}
+.footer-nav-bar ul li{
+    list-style: none;
+    text-align: center;
+}
+.footer-icons ul{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px 0px;
+}
+.footer-icons ul li{
+    list-style: none;
+    text-align: center;
+}
+.footer-nav-bar2 ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px;
+}
+.footer-nav-bar2 ul li{
+    list-style: none;
+    text-align: center;
+}
+.copyright p{
+    text-align: center;
+}
+/*footer end*/
